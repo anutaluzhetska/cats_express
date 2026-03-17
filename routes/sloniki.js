@@ -7,7 +7,8 @@ router.get('/', async function(req, res, next) {
   const rowSloniki = sloniki.rows.map(s => {
     return {
       ...s,
-      created_at: s.created_at.toLocaleDateString()
+      created_at_time: s.created_at.toLocaleTimeString(), 
+      created_at_date: s.created_at.toLocaleDateString()
     }
   })
 
