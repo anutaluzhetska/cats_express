@@ -3,7 +3,7 @@ const router = express.Router();
 import db from '../db/connector.js';
 
 router.get('/', async function(req, res, next) {
-  const students = await db.query('SELECT * FROM users');
+  const students = await db.query('SELECT * FROM students');
 
   res.render('index', { students: students.rows || [] });
 });
