@@ -8,6 +8,7 @@ import logger from 'morgan'
 import indexRouter from './routes/index.js'
 import usersRouter from './routes/users.js'
 import weaponRouter from './routes/dead_space.js'
+import carsRouter from './routes/cars.js'
 import slonikiRouter from './routes/sloniki.js'
 
 import { fileURLToPath } from 'url';
